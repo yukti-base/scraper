@@ -1,0 +1,19 @@
+{
+  "data": {
+    "matchedUser": {
+      "username": "yuktisetu_fresher",
+      "profile": { "ranking": 998877, "reputation": 0 },
+      "submitStatsGlobal": {
+        "acSubmissionNum": [
+          { "difficulty": "All",    "count": 12 },
+          { "difficulty": "Easy",   "count": 11 },
+          { "difficulty": "Medium", "count": 1 },
+          { "difficulty": "Hard",   "count": 0 }
+        ]
+      },
+      "languageProblemCount": [ { "languageName": "Python3", "problemsSolved": 12 } ],
+      "tagProblemCounts": { "advanced": [], "intermediate": [], "fundamental": [] }
+    },
+    "userContestRanking": null
+  }
+}

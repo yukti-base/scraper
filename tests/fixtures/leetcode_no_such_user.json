@@ -1,0 +1,6 @@
+{
+  "data": { "matchedUser": null, "userContestRanking": null },
+  "errors": [
+    { "message": "That user does not exist.", "path": ["matchedUser"] }
+  ]
+}

@@ -1,0 +1,36 @@
+[project]
+name = "yuktisetu-scraper"
+version = "0.1.0"
+description = "Reads students' public coding-platform profiles for YuktiSetu's composite score."
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.27",
+    "psycopg[binary,pool]>=3.2",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "pydantic>=2.8",
+    "pydantic-settings>=2.4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3", "pytest-asyncio>=0.24", "respx>=0.21"]
+# The HTML platforms (CodeChef, GeeksforGeeks, HackerRank, HackerEarth) land in a
+# later step and bring their own parsing stack. Codeforces and LeetCode are both
+# JSON APIs, so this first cut needs no HTML parser at all -- which is the whole
+# reason they are first.
+html = ["selectolax>=0.3.21", "beautifulsoup4>=4.12", "scrapling>=0.2"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+# Network-touching tests are opt-in: `pytest -m live`. CI runs the golden
+# fixtures only, so a platform having a bad day never fails the build.
+markers = ["live: hits a real platform; run manually, never in CI"]
+asyncio_mode = "auto"

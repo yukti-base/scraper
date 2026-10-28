@@ -1,0 +1,31 @@
+{
+  "data": {
+    "matchedUser": {
+      "username": "yuktisetu_canary",
+      "profile": { "ranking": 184231, "reputation": 12 },
+      "submitStatsGlobal": {
+        "acSubmissionNum": [
+          { "difficulty": "All",    "count": 742 },
+          { "difficulty": "Easy",   "count": 310 },
+          { "difficulty": "Medium", "count": 358 },
+          { "difficulty": "Hard",   "count": 74 }
+        ]
+      },
+      "languageProblemCount": [
+        { "languageName": "Java",   "problemsSolved": 500 },
+        { "languageName": "Python3","problemsSolved": 242 }
+      ],
+      "tagProblemCounts": {
+        "advanced":     [ { "tagName": "Dynamic Programming", "problemsSolved": 88 } ],
+        "intermediate": [ { "tagName": "Binary Search",       "problemsSolved": 54 } ],
+        "fundamental":  [ { "tagName": "Array",               "problemsSolved": 300 } ]
+      }
+    },
+    "userContestRanking": {
+      "attendedContestsCount": 31,
+      "rating": 1842.47,
+      "globalRanking": 41203,
+      "topPercentage": 8.4
+    }
+  }
+}

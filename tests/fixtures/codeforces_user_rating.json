@@ -1,0 +1,8 @@
+{
+  "status": "OK",
+  "result": [
+    {"contestId": 1700, "contestName": "Div 2 Round A", "handle": "yuktisetu_canary", "rank": 1200, "oldRating": 1500, "newRating": 1602},
+    {"contestId": 1701, "contestName": "Div 2 Round B", "handle": "yuktisetu_canary", "rank": 900,  "oldRating": 1602, "newRating": 1802},
+    {"contestId": 1702, "contestName": "Div 2 Round C", "handle": "yuktisetu_canary", "rank": 1500, "oldRating": 1802, "newRating": 1687}
+  ]
+}

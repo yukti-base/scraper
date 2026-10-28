@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "result": [
+    {
+      "handle": "yuktisetu_canary",
+      "rating": 1687,
+      "maxRating": 1802,
+      "rank": "expert",
+      "maxRank": "candidate master",
+      "contribution": 0,
+      "friendOfCount": 3,
+      "registrationTimeSeconds": 1600000000
+    }
+  ]
+}
