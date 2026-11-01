@@ -156,8 +156,8 @@ checks are the canary's job and are opt-in.
 
 ## Schema
 
-`../.schema/2026-10-06-coding-scrape-tables.sql`, then
-`../.schema/2026-10-15-apply-time-coding-capture.sql`. Note the `OWNER TO yuktisetu`
+`../infra/migrations/2026-10-06-coding-scrape-tables.sql`, then
+`../infra/migrations/2026-10-15-apply-time-coding-capture.sql`. Note the `OWNER TO yuktisetu`
 lines: applying the file from a superuser shell account creates tables owned by
 that account, the services connect as `yuktisetu`, and the result is "permission
 denied for table" — which the Java test suites do not catch, because they run
